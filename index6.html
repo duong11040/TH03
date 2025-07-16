@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ảnh + Mô tả bằng Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .container img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h2 {
+      color: #0077b6;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    .content h2:hover {
+      color: #023e8a;
+    }
+
+    .content p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: cetrình
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/499611382_1070273918286948_3833009634266450309_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=6e66Ywu46kQQ7kNvwFQIfMd&_nc_oc=AdlonhaYm821bmOtZDBjdy9_T-1k00dEt68-Tx4wW65NJpHlQStzehJMKUfLd6LEfjM&_nc_zt=23&_nc_ht=scontent.fdad3-1.fna&_nc_gid=94X9SkMzEKAj4PBwWyyNhA&oh=00_AfSeek--xsXwNLlzhrUpNWekxJrwLur7uZyc9X-31ij9Vg&oe=687D4052" alt="Ảnh đại diện">
+    <div class="content">
+      <h2>Giới thiệu bản thân</h2>
+      <p>
+        Hi, Mình là Dương
+        Mình là sinh viên ngành Thương mại điện tử. <br>
+        Hiện tại sinh sống và học tập tại tp HCM, mình thích nghe nhạc, học hỏi và tìm tòi nhiều thứ hay
+        Đam mê sáng tạo và lập trình 🤖
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
